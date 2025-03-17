@@ -9094,6 +9094,7 @@ ul {
   margin-top: 3px;
 }
 
+// ... existing code ...
 .service-details__benefits-points li .icon {
   color: $ambed-base;
   font-size: 9px;
@@ -9106,20 +9107,23 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
+  align-self: baseline;
+  margin-top: 7px;
+  position: absolute;
   height: 16px;
   width: 16px;
   border: 1px solid $ambed-base;
   border-radius: 50%;
+  top: 3px;
+  left: 0;
 }
 
-.service-details__benefits-points li .icon i {
+.service-details__benefits-points li {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 1px;
+  padding-left: 25px;
+  margin-bottom: 10px;
 }
+
 
 .service-details__benefits-points li .text {
   margin-left: 15px;
