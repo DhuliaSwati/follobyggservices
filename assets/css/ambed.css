@@ -9490,6 +9490,8 @@ ul {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  align-self: baseline;
+  margin-top: 7px;
   position: relative;
   height: 16px;
   width: 16px;
