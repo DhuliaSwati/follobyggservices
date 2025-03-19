@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Home One || Ambed || Ambed HTML 5 Template </title>
+    <title> follobyggservice </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -53,6 +53,32 @@
 
     <!-- toolbar css -->
     <link rel="stylesheet" href="assets/vendors/toolbar/css/toolbar.css">
+    <style>
+        .main-slider__title {
+            font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.main-slider__title .highlight {
+    color: #e8aa31; /* Use your brand's accent color */
+    display: block; /* Makes it appear on a new line */
+}
+
+.main-slider__description {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #fff;
+}
+
+.main-slider__description strong {
+    color: #e8aa31; /* Use your brand's accent color */
+}
+    </style>
 
 </head>
 
@@ -170,20 +196,7 @@
 
         <!--Main Slider Start-->
         <section class="main-slider clearfix">
-            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
-                "effect": "fade",
-                "pagination": {
-                "el": "#main-slider-pagination",
-                "type": "bullets",
-                "clickable": true
-                },
-                "navigation": {
-                "nextEl": "#main-slider__swiper-button-next",
-                "prevEl": "#main-slider__swiper-button-prev"
-                },
-                "autoplay": {
-                "delay": 5000
-                }}'>
+            <div class="swiper-container thm-swiper__slider">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
@@ -194,85 +207,17 @@
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="main-slider__content">
-                                        <div class="main-slider__icon">
-                                            <img src="assets/images/shapes/main-slider-icon.png" alt="">
-                                        </div>
-                                        <div class="main-slider__sub-title-box">
-                                            <p class="main-slider__sub-title">welcome to ambed</p>
-                                            <div class="main-slider__border-left"></div>
-                                            <div class="main-slider__border-right"></div>
-                                        </div>
-                                        <h2 class="main-slider__title">Quality <br> Wallpapers <span>&</span> <br>
-                                            Painting For Home</h2>
+                                        <h2 class="main-slider__title">Du har drømmen - <span class="highlight">vi bygger den</span></h2>
+                                        <p class="main-slider__description">
+                                            I tjue år har vi forvandlet drømmer til hjem. Din visjon blir rommet hvor familiens historie utfolder seg—bygget med <strong>fagkunnskap</strong>, <strong>omsorg</strong>, og <strong>hjerte</strong>.
+                                        </p>
                                         <div class="main-slider__btn-box">
-                                            <a href="about.html" class="thm-btn main-slider__btn">Discover More</a>
+                                            <a href="contact.html" class="thm-btn main-slider__btn">Oppdag mer</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/main-slider-1-2.jpg);"></div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <div class="main-slider__icon">
-                                            <img src="assets/images/shapes/main-slider-icon.png" alt="">
-                                        </div>
-                                        <div class="main-slider__sub-title-box">
-                                            <p class="main-slider__sub-title">welcome to ambed</p>
-                                            <div class="main-slider__border-left"></div>
-                                            <div class="main-slider__border-right"></div>
-                                        </div>
-                                        <h2 class="main-slider__title">Quality <br> Wallpapers <span>&</span> <br>
-                                            Painting For Home</h2>
-                                        <div class="main-slider__btn-box">
-                                            <a href="about.html" class="thm-btn main-slider__btn">Discover More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/main-slider-1-3.jpg);"></div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <div class="main-slider__icon">
-                                            <img src="assets/images/shapes/main-slider-icon.png" alt="">
-                                        </div>
-                                        <div class="main-slider__sub-title-box">
-                                            <p class="main-slider__sub-title">welcome to ambed</p>
-                                            <div class="main-slider__border-left"></div>
-                                            <div class="main-slider__border-right"></div>
-                                        </div>
-                                        <h2 class="main-slider__title">Quality <br> Wallpapers <span>&</span> <br>
-                                            Painting For Home</h2>
-                                        <div class="main-slider__btn-box">
-                                            <a href="about.html" class="thm-btn main-slider__btn">Discover More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="main-slider__nav">
-                    <div class="swiper-button-prev" id="main-slider__swiper-button-next">
-                        <i class="fa fa-angle-left"></i>
-                    </div>
-                    <div class="swiper-button-next" id="main-slider__swiper-button-prev">
-                        <i class="fa fa-angle-right"></i>
                     </div>
                 </div>
 
@@ -291,12 +236,11 @@
                     <div class="col-xl-6">
                         <div class="about-one__left">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">About company</span>
-                                <h2 class="section-title__title">We're Providing Quality Wall Designs</h2>
+                                <span class="section-title__tagline">Om vårt selskap</span>
+                                <h2 class="section-title__title">Vi bygger drømmene dine, ett rom av gangen</h2>
                                 <div class="section-title__line"></div>
                             </div>
-                            <p class="about-one__text-1">We have 30+ years of experiences for give you better quality
-                                results.</p>
+                            <p class="about-one__text-1">I over 20 år har vi lagt sjelen vår i å skape hjem hvor minner fødes. Hver spiker som hamres, hver vegg som reises bærer vårt løfte om å virkeliggjøre din visjon.</p>
                             <ul class="list-unstyled about-one__points">
                                 <li>
                                     <div class="about-one__points-content-box">
@@ -304,7 +248,7 @@
                                             <span class="icon-wallpaper"></span>
                                         </div>
                                         <div class="about-one__points-text-box">
-                                            <p class="about-one__points-text">Smart & Unique Wall Work</p>
+                                            <p class="about-one__points-text">Kreativt håndverk</p>
                                         </div>
                                     </div>
                                 </li>
@@ -314,25 +258,23 @@
                                             <span class="icon-high-quality"></span>
                                         </div>
                                         <div class="about-one__points-text-box">
-                                            <p class="about-one__points-text">The Best Quality Standards</p>
+                                            <p class="about-one__points-text">Gullstandard kvalitet</p>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                            <p class="about-one__text-2">Lorem ipsum dolor sit amet, consectetur notted adipisicing elit
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lonm andhn. Aenean
-                                tincidunt id mauris id auctor donec at ligula lacus.</p>
+                            <p class="about-one__text-2">Bak tegningene og bjelkene ligger vår sanne bragd: over 100 familier som har betrodd oss å forme rommene hvor de lever, elsker og vokser. Smilene deres når de først trer inn i sitt ferdige hjem—det er det som driver oss fremover hver eneste dag.</p>
                             <div class="about-one__contact-us">
                                 <div class="about-one__btn-box">
-                                    <a href="about.html" class="thm-btn about-one__btn">Read More About</a>
+                                    <a href="about.html" class="thm-btn about-one__btn">Les mer om oss</a>
                                 </div>
                                 <div class="about-one__call">
                                     <div class="about-one__call-icon">
                                         <span class="icon-phone-call"></span>
                                     </div>
                                     <div class="about-one__call-text">
-                                        <p>Call anytime</p>
-                                        <a href="tel:980009630">+ 98 (000) - 9630</a>
+                                        <p>Ring oss når som helst</p>
+                                        <a href="tel:4766806060">+47 66 80 60 60</a>
                                     </div>
                                 </div>
                             </div>
@@ -347,15 +289,6 @@
                                 </div>
                                 <div class="about-one__small-img">
                                     <img src="assets/images/resources/about-one-small-img.jpg" alt="">
-                                </div>
-                                <div class="about-one__project">
-                                    <div class="about-one__project-icon">
-                                        <span class="icon-wallpaper-1"></span>
-                                    </div>
-                                    <div class="about-one__project-content">
-                                        <h3 class="odometer" data-count="3690">00</h3>
-                                        <p class="about-one__project-text">Successful Project</p>
-                                    </div>
                                 </div>
                                 <div class="about-one__shape-1 float-bob-y"></div>
                                 <div class="about-one__dot">
@@ -385,12 +318,8 @@
                             <div class="feature-one__icon">
                                 <span class="icon-mind"></span>
                             </div>
-                            <h3 class="feature-one__title"><a href="about.html">Smart Work</a></h3>
-                            <p class="feature-one__text">There are many of pass of lorem ipsum available, but the
-                                majority.</p>
-                            <div class="feature-one__arrow">
-                                <a href="about.html"><i class="fa fa-arrow-right"></i></a>
-                            </div>
+                            <h3 class="feature-one__title"><a href="tradisjonelt-handverk.html">Håndverk Som Taler</a></h3>
+                            <p class="feature-one__text">Vi fletter tradisjonelt norsk håndverk sammen med moderne innovasjon. Når du lar hånden gli over våre trearbeider, vil du kjenne forskjellen som kommer fra mennesker som virkelig bryr seg.</p>
                         </div>
                     </li>
                     <!--Feature One Single-->
@@ -405,12 +334,8 @@
                             <div class="feature-one__icon">
                                 <span class="icon-wallpaper-2"></span>
                             </div>
-                            <h3 class="feature-one__title"><a href="about.html">Unique Designs</a></h3>
-                            <p class="feature-one__text">There are many of pass of lorem ipsum available, but the
-                                majority.</p>
-                            <div class="feature-one__arrow">
-                                <a href="about.html"><i class="fa fa-arrow-right"></i></a>
-                            </div>
+                            <h3 class="feature-one__title"><a href="design.html">Design Som Lytter</a></h3>
+                            <p class="feature-one__text">Hjemmet ditt skal føle seg som deg—før vi tegner en eneste strek, lytter vi. Hvert hjørne, hver vindusplassering, hvert valg av lys gjenspeiler din families unike rytme og liv.</p>
                         </div>
                     </li>
                     <!--Feature One Single-->
@@ -425,12 +350,8 @@
                             <div class="feature-one__icon">
                                 <span class="icon-programmer"></span>
                             </div>
-                            <h3 class="feature-one__title"><a href="team.html">Skilled Team</a></h3>
-                            <p class="feature-one__text">There are many of pass of lorem ipsum available, but the
-                                majority.</p>
-                            <div class="feature-one__arrow">
-                                <a href="team.html"><i class="fa fa-arrow-right"></i></a>
-                            </div>
+                            <h3 class="feature-one__title"><a href="team.html">Hjerter Som Bygger</a></h3>
+                            <p class="feature-one__text">Vårt team bygger ikke bare hus—de skaper hjem. Med lidenskap i fingerspissene og presisjon i verktøyene, behandler de prosjektet ditt som om det var deres egen families tilfluktssted.</p>
                         </div>
                     </li>
                     <!--Feature One Single-->
@@ -445,12 +366,8 @@
                             <div class="feature-one__icon">
                                 <span class="icon-best-price"></span>
                             </div>
-                            <h3 class="feature-one__title"><a href="contact.html">Best Pricing</a></h3>
-                            <p class="feature-one__text">There are many of pass of lorem ipsum available, but the
-                                majority.</p>
-                            <div class="feature-one__arrow">
-                                <a href="contact.html"><i class="fa fa-arrow-right"></i></a>
-                            </div>
+                            <h3 class="feature-one__title"><a href="verdier.html">Verdi Som Varer</a></h3>
+                            <p class="feature-one__text">Ekte kvalitet trenger ikke å knuse drømmene dine. Vi tilbyr ærlig prissetting med åpenheten du fortjener—fordi overraskende kostnader ikke har noen plass i å bygge tillit.</p>
                         </div>
                     </li>
                 </ul>
@@ -466,8 +383,8 @@
             </div>
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="section-title__tagline">Our Services</span>
-                    <h2 class="section-title__title">Services We're Offering</h2>
+                    <span class="section-title__tagline">Våre tjenester</span>
+                    <h2 class="section-title__title">Tjenester vi tilbyr</h2>
                     <div class="section-title__line"></div>
                 </div>
                 <div class="row">
@@ -476,14 +393,10 @@
                         <div class="services-one__single wow fadeInUp" data-wow-delay="100ms">
                             <div class="services-one__img">
                                 <img src="assets/images/services/services-1-1.jpg" alt="">
-                                <div class="services-one__icon">
-                                    <span class="icon-wallpaper-3"></span>
-                                </div>
                             </div>
                             <div class="services-one__content">
-                                <h3 class="services-one__title"><a href="room-wallpapers.html">Room Wallpapers</a></h3>
-                                <p class="services-one__text">Morbi feugiat porta purus, at eleifend dolor posuere ac.
-                                </p>
+                                <h3 class="services-one__title"><a href="Nybygg.html">Nybygg</a></h3>
+                                <p class="services-one__text">Bygg ditt drømmehjem med oss. Skreddersydde nybyggsløsninger for å få det akkurat slik du ønsker.</p>
                             </div>
                         </div>
                     </div>
@@ -492,14 +405,11 @@
                         <div class="services-one__single wow fadeInUp" data-wow-delay="200ms">
                             <div class="services-one__img">
                                 <img src="assets/images/services/services-1-2.jpg" alt="">
-                                <div class="services-one__icon">
-                                    <span class="icon-wallpaper-4"></span>
-                                </div>
                             </div>
                             <div class="services-one__content">
-                                <h3 class="services-one__title"><a href="wall-sheets.html">Wall Sheets</a></h3>
-                                <p class="services-one__text">Morbi feugiat porta purus, at eleifend dolor posuere ac.
-                                </p>
+                                <h3 class="services-one__title"><a href="Tilbygg.html">Tilbygg
+                                </a></h3>
+                                <p class="services-one__text">Utvid ditt hjem med våre tilbygg. Skreddersydde løsninger for økt plass og funksjonalitet.</p>
                             </div>
                         </div>
                     </div>
@@ -508,14 +418,11 @@
                         <div class="services-one__single wow fadeInUp" data-wow-delay="300ms">
                             <div class="services-one__img">
                                 <img src="assets/images/services/services-1-3.jpg" alt="">
-                                <div class="services-one__icon">
-                                    <span class="icon-paint"></span>
-                                </div>
                             </div>
                             <div class="services-one__content">
-                                <h3 class="services-one__title"><a href="wall-painting.html">Wall Painting</a></h3>
-                                <p class="services-one__text">Morbi feugiat porta purus, at eleifend dolor posuere ac.
-                                </p>
+                                <h3 class="services-one__title"><a href="Rehabilitering.html">Rehabilitering
+                                </a></h3>
+                                <p class="services-one__text">Gjenoppdag potensialet i dine eksisterende bygninger med vår rehabiliteringstjeneste.</p>
                             </div>
                         </div>
                     </div>
@@ -549,59 +456,38 @@
                                 <div class="quality-work__img">
                                     <img src="assets/images/resources/quality-work-img-1.png" alt="">
                                 </div>
-                                <div class="quality-work__small-img">
-                                    <img src="assets/images/resources/quality-work-small-img.jpg" alt="">
-                                </div>
-                                <div class="quality-work__video-box">
-                                    <div class="quality-work__curved-circle-box">
-                                        <div class="curved-circle">
-                                            <span class="curved-circle--item">NEW COLLECTION 2022.</span>
-                                        </div><!-- /.curved-circle -->
-                                        <div class="quality-work__video-link">
-                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                                <div class="quality-work__video-icon">
-                                                    <span class="fa fa-play"></span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="quality-work__right">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">Interior designing</span>
-                                <h2 class="section-title__title">Quality Work That Meets Your Expectations</h2>
+                                <span class="section-title__tagline">Vår filosofi</span>
+                                <h2 class="section-title__title">ROM SOM FORVANDLER</h2>
                                 <div class="section-title__line"></div>
                             </div>
-                            <p class="quality-work__text-1">There are many variations of passages of lorem ipsum
-                                available but the majority have suffered.</p>
+                            <p class="quality-work__text-1">Kvalitet som overgår forventninger</p>
+                            <p class="quality-work__text-2">Veggene rundt deg former hvordan du føler deg hver eneste dag. Våre spesialister skaper rom som ikke bare fanger blikket—de fanger hjertet. Fra det øyeblikket du trår inn, vil du kjenne forskjellen.</p>
                             <ul class="list-unstyled quality-work__feature">
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-image-gallery1"></span>
                                     </div>
                                     <div class="text">
-                                        <p>Innovative <br> Wallpaper Designs</p>
+                                        <p>Baderom som<br> helligdommer</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <span class="icon-wallpaper-5"></span>
                                     </div>
                                     <div class="text">
-                                        <p>High Quality Wall <br> Materials</p>
+                                        <p>Materialer med<br> integritet</p>
                                     </div>
                                 </li>
                             </ul>
-                            <p class="quality-work__text-2">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form, by injected humour,
-                                or randomised words which don't look even.</p>
+                            <p class="quality-work__text-2">Fra morgenens første lys til kveldens avslappende øyeblikk, skal baderommet ditt være et fristed. Vi leter langt og bredt etter materialer som er verdige hjemmet ditt, for å sikre at det står stødig i generasjoner.</p>
                             <div class="quality-work__progress">
                                 <div class="quality-work__progress-single">
-                                    <h4 class="quality-work__progress-title">Interior Wall Design</h4>
+                                    <h4 class="quality-work__progress-title">Våre interiørdesign overgikk forventningene</h4>
                                     <div class="bar">
                                         <div class="bar-inner count-bar" data-percent="88%">
                                             <div class="count-text">88%</div>
@@ -609,10 +495,10 @@
                                     </div>
                                 </div>
                                 <div class="quality-work__progress-single">
-                                    <h4 class="quality-work__progress-title">Exterior Painting</h4>
+                                    <h4 class="quality-work__progress-title">Utendørsområder bringer fortsatt glede</h4>
                                     <div class="bar marb-0">
-                                        <div class="bar-inner count-bar" data-percent="60%">
-                                            <div class="count-text">60%</div>
+                                        <div class="bar-inner count-bar" data-percent="90%">
+                                            <div class="count-text">90%</div>
                                         </div>
                                     </div>
                                 </div>
@@ -628,8 +514,8 @@
         <section class="project-one">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="section-title__tagline">Successful Project</span>
-                    <h2 class="section-title__title">Keep your Eye on Our <br> Latest Projects</h2>
+                    <span class="section-title__tagline">Vellykkede prosjekter</span>
+                    <h2 class="section-title__title">Se våre<br>siste prosjekter</h2>
                     <div class="section-title__line"></div>
                 </div>
                 <div class="project-one__inner">
@@ -648,17 +534,12 @@
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="project-one__right">
                                                 <div class="project-one__content-box">
-                                                    <div class="project-one-shape-1 float-bob-y">
-                                                        <img src="assets/images/shapes/project-one-shape-1.png" alt="">
-                                                    </div>
+                                                    
                                                     <div class="project-one__content">
-                                                        <h4 class="project-one__title">Bedroom Wall Design</h4>
-                                                        <p class="project-one__text">Quisque sit amet tincidunt enim.
-                                                            Sed dignissim vulputate orci, non lobortis turpis luctus
-                                                            eget. Sed sit amet pharetra felis. Nulla semper velit non
-                                                            tempus sollicitudin.</p>
-                                                        <a href="project-details.html"
-                                                            class="thm-btn project-one__btn">Read More About</a>
+                                                        <h4 class="project-one__title">Enebolig i Asker</h4>
+                                                        <p class="project-one__text">En enebolig designet og planlagt av Block Watne Fluks AS, hvor Follo Byggservice AS fungerte som totalleverandør av tømrertjenester. Ferdigstilt i august 2023.</p>
+                                                        <a href="Bolig-Asker.html"
+                                                            class="thm-btn project-one__btn">Les mer</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -677,17 +558,12 @@
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="project-one__right">
                                                 <div class="project-one__content-box">
-                                                    <div class="project-one-shape-1 float-bob-y">
-                                                        <img src="assets/images/shapes/project-one-shape-1.png" alt="">
-                                                    </div>
+                                                    
                                                     <div class="project-one__content">
-                                                        <h4 class="project-one__title">Bedroom Wall Design</h4>
-                                                        <p class="project-one__text">Quisque sit amet tincidunt enim.
-                                                            Sed dignissim vulputate orci, non lobortis turpis luctus
-                                                            eget. Sed sit amet pharetra felis. Nulla semper velit non
-                                                            tempus sollicitudin.</p>
-                                                        <a href="project-details.html"
-                                                            class="thm-btn project-one__btn">Read More About</a>
+                                                        <h4 class="project-one__title">Enebolig i Høvik</h4>
+                                                        <p class="project-one__text">Et annet samarbeid med Block Watne Fluks AS, hvor Follo Byggservice AS leverte omfattende tømrertjenester. Prosjektet ble ferdigstilt i oktober 2023.</p>
+                                                        <a href="Enebolig-Hovik.html"
+                                                            class="thm-btn project-one__btn">Les mer</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -706,17 +582,12 @@
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="project-one__right">
                                                 <div class="project-one__content-box">
-                                                    <div class="project-one-shape-1 float-bob-y">
-                                                        <img src="assets/images/shapes/project-one-shape-1.png" alt="">
-                                                    </div>
+                                                    
                                                     <div class="project-one__content">
-                                                        <h4 class="project-one__title">Bedroom Wall Design</h4>
-                                                        <p class="project-one__text">Quisque sit amet tincidunt enim.
-                                                            Sed dignissim vulputate orci, non lobortis turpis luctus
-                                                            eget. Sed sit amet pharetra felis. Nulla semper velit non
-                                                            tempus sollicitudin.</p>
-                                                        <a href="project-details.html"
-                                                            class="thm-btn project-one__btn">Read More About</a>
+                                                        <h4 class="project-one__title">Enebolig Oslo</h4>
+                                                        <p class="project-one__text">Enebolig tegnet og prosjektert av Block Watne Fluks AS, hvor Follo Byggservice AS har vært leid inn som totalleverandør av tømrertjenester.</p>
+                                                        <a href="Enebolig-Oslo.html"
+                                                            class="thm-btn project-one__btn">Les mer</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -735,17 +606,12 @@
                                         <div class="col-xl-6 col-lg-6">
                                             <div class="project-one__right">
                                                 <div class="project-one__content-box">
-                                                    <div class="project-one-shape-1 float-bob-y">
-                                                        <img src="assets/images/shapes/project-one-shape-1.png" alt="">
-                                                    </div>
+                                                    
                                                     <div class="project-one__content">
-                                                        <h4 class="project-one__title">Bedroom Wall Design</h4>
-                                                        <p class="project-one__text">Quisque sit amet tincidunt enim.
-                                                            Sed dignissim vulputate orci, non lobortis turpis luctus
-                                                            eget. Sed sit amet pharetra felis. Nulla semper velit non
-                                                            tempus sollicitudin.</p>
-                                                        <a href="project-details.html"
-                                                            class="thm-btn project-one__btn">Read More About</a>
+                                                        <h4 class="project-one__title">Tilbygg Oppegård</h4>
+                                                        <p class="project-one__text">Tilbygg i Oppegård</p>
+                                                        <a href="Tilbygg-Oppegård.html"
+                                                            class="thm-btn project-one__btn">Les mer</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -795,7 +661,7 @@
                     <div class="col-xl-12">
                         <div class="project-one__more-project">
                             <div class="project-one__more-project-content">
-                                <p>We're always ready to serve you. <a href="project-details.html">View more
+                                <p>We're always ready to serve you. <a href="projects.html">View more
                                         projects</a></p>
                             </div>
                         </div>
@@ -916,213 +782,6 @@
         </section>
         <!--Team One End-->
 
-        <!--Testimonial One Start-->
-        <section class="testimonial-one">
-            <div class="testimonial-one-bg-box">
-                <div class="testimonial-one-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-                    style="background-image: url(assets/images/backgrounds/testimonial-one-bg.jpg);"></div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3">
-                        <div class="testimonial-one__left">
-                            <div class="section-title text-left">
-                                <span class="section-title__tagline">testimonials</span>
-                                <h2 class="section-title__title">What Our Customers Say?</h2>
-                                <div class="section-title__line"></div>
-                            </div>
-                            <p class="testimonial-one__text">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor to
-                                incidut labore et dolore magna for aliqua.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-9">
-                        <div class="testimonial-one__right">
-                            <div class="owl-carousel owl-theme thm-owl__carousel testimonial-one__carousel"
-                                data-owl-options='{
-                                "loop": true,
-                                "autoplay": false,
-                                "margin": 30,
-                                "nav": false,
-                                "dots": true,
-                                "smartSpeed": 500,
-                                "autoplayTimeout": 10000,
-                                "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-                                "responsive": {
-                                    "0": {
-                                        "items": 1
-                                    },
-                                    "768": {
-                                        "items": 1
-                                    },
-                                    "992": {
-                                        "items": 2
-                                    },
-                                    "1200": {
-                                        "items": 2.25545
-                                    }
-                                }
-                            }'>
-                                <!--Testimonial One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
-                                        <span class="icon-quotation"></span>
-                                    </div>
-                                    <p class="testimonial-one__text-2">Lorem ipsum dolor sit amet elit, sed do eiusmod
-                                        tempor to incidut labore et dolore magna for aliqua. Quis ipsum suspendisse.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__img">
-                                            <img src="assets/images/testimonial/testimonial-1-1.jpg" alt="">
-                                        </div>
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">John Smith</h4>
-                                            <p class="testimonial-one__client-title">Our Customer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
-                                        <span class="icon-quotation"></span>
-                                    </div>
-                                    <p class="testimonial-one__text-2">Lorem ipsum dolor sit amet elit, sed do eiusmod
-                                        tempor to incidut labore et dolore magna for aliqua. Quis ipsum suspendisse.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__img">
-                                            <img src="assets/images/testimonial/testimonial-1-2.jpg" alt="">
-                                        </div>
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Sarah Albert</h4>
-                                            <p class="testimonial-one__client-title">Our Customer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
-                                        <span class="icon-quotation"></span>
-                                    </div>
-                                    <p class="testimonial-one__text-2">Lorem ipsum dolor sit amet elit, sed do eiusmod
-                                        tempor to incidut labore et dolore magna for aliqua. Quis ipsum suspendisse.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__img">
-                                            <img src="assets/images/testimonial/testimonial-1-3.jpg" alt="">
-                                        </div>
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Kevin Martin</h4>
-                                            <p class="testimonial-one__client-title">Our Customer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
-                                        <span class="icon-quotation"></span>
-                                    </div>
-                                    <p class="testimonial-one__text-2">Lorem ipsum dolor sit amet elit, sed do eiusmod
-                                        tempor to incidut labore et dolore magna for aliqua. Quis ipsum suspendisse.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__img">
-                                            <img src="assets/images/testimonial/testimonial-1-1.jpg" alt="">
-                                        </div>
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">John Smith</h4>
-                                            <p class="testimonial-one__client-title">Our Customer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
-                                        <span class="icon-quotation"></span>
-                                    </div>
-                                    <p class="testimonial-one__text-2">Lorem ipsum dolor sit amet elit, sed do eiusmod
-                                        tempor to incidut labore et dolore magna for aliqua. Quis ipsum suspendisse.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__img">
-                                            <img src="assets/images/testimonial/testimonial-1-2.jpg" alt="">
-                                        </div>
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Sarah Albert</h4>
-                                            <p class="testimonial-one__client-title">Our Customer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
-                                        <span class="icon-quotation"></span>
-                                    </div>
-                                    <p class="testimonial-one__text-2">Lorem ipsum dolor sit amet elit, sed do eiusmod
-                                        tempor to incidut labore et dolore magna for aliqua. Quis ipsum suspendisse.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__img">
-                                            <img src="assets/images/testimonial/testimonial-1-3.jpg" alt="">
-                                        </div>
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Kevin Martin</h4>
-                                            <p class="testimonial-one__client-title">Our Customer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
-                                        <span class="icon-quotation"></span>
-                                    </div>
-                                    <p class="testimonial-one__text-2">Lorem ipsum dolor sit amet elit, sed do eiusmod
-                                        tempor to incidut labore et dolore magna for aliqua. Quis ipsum suspendisse.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__img">
-                                            <img src="assets/images/testimonial/testimonial-1-1.jpg" alt="">
-                                        </div>
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">John Smith</h4>
-                                            <p class="testimonial-one__client-title">Our Customer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
-                                        <span class="icon-quotation"></span>
-                                    </div>
-                                    <p class="testimonial-one__text-2">Lorem ipsum dolor sit amet elit, sed do eiusmod
-                                        tempor to incidut labore et dolore magna for aliqua. Quis ipsum suspendisse.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__img">
-                                            <img src="assets/images/testimonial/testimonial-1-2.jpg" alt="">
-                                        </div>
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Sarah Albert</h4>
-                                            <p class="testimonial-one__client-title">Our Customer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
-                                        <span class="icon-quotation"></span>
-                                    </div>
-                                    <p class="testimonial-one__text-2">Lorem ipsum dolor sit amet elit, sed do eiusmod
-                                        tempor to incidut labore et dolore magna for aliqua. Quis ipsum suspendisse.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__img">
-                                            <img src="assets/images/testimonial/testimonial-1-3.jpg" alt="">
-                                        </div>
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Kevin Martin</h4>
-                                            <p class="testimonial-one__client-title">Our Customer</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Testimonial One End-->
-
         <!--Brand One Start-->
         <section class="brand-one">
             <div class="container">
@@ -1157,7 +816,7 @@
                                 "slidesPerView": 5
                             },
                             "1199": {
-                                "spaceBetween": 100,
+                                "spaceBetween": 90,
                                 "slidesPerView": 5
                             }
                         }}'>
@@ -1179,18 +838,6 @@
                                         </div><!-- /.swiper-slide -->
                                         <div class="swiper-slide">
                                             <img src="assets/images/brand/brand-1-1.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-2.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-3.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-4.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-5.png" alt="">
                                         </div><!-- /.swiper-slide -->
                                     </div>
                                 </div>
@@ -1216,23 +863,19 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="assets/images/blog/blog-1-1.jpg" alt="">
-                                <a href="blog-details.html">
+                                <a href="blog-1.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
                             </div>
                             <div class="blog-one__content">
                                 <div class="blog-one__date">
-                                    <p>20 Feb, 2022</p>
+                                    <p>19. Mar 2025</p>
                                 </div>
                                 <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                    <li><span>/</span></li>
-                                    <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="blog-1.html"><i class="far fa-user-circle"></i> av Follo Byggservice</a>
                                     </li>
                                 </ul>
-                                <h3 class="blog-one__title"><a href="blog-details.html">Learn the Right Way to Use Wall
-                                        Sheet</a></h3>
+                                <h3 class="blog-one__title"><a href="blog-1.html">Fem vanlige feil å unngå under en oppussingsprosess</a></h3>
                             </div>
                         </div>
                     </div>
@@ -1241,23 +884,19 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="assets/images/blog/blog-1-2.jpg" alt="">
-                                <a href="blog-details.html">
+                                <a href="blog-2.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
                             </div>
                             <div class="blog-one__content">
                                 <div class="blog-one__date">
-                                    <p>20 Feb, 2022</p>
+                                    <p>19. Mar 2025</p>
                                 </div>
                                 <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                    <li><span>/</span></li>
-                                    <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="blog-2.html"><i class="far fa-user-circle"></i> av Follo Byggservice</a>
                                     </li>
                                 </ul>
-                                <h3 class="blog-one__title"><a href="blog-details.html">Leverage agile frameworks to
-                                        provide</a></h3>
+                                <h3 class="blog-one__title"><a href="blog-2.html">De viktigste faktorene å vurdere når du bygger et nytt hjem</a></h3>
                             </div>
                         </div>
                     </div>
@@ -1266,23 +905,19 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="assets/images/blog/blog-1-3.jpg" alt="">
-                                <a href="blog-details.html">
+                                <a href="blog-3.html">
                                     <span class="blog-one__plus"></span>
                                 </a>
                             </div>
                             <div class="blog-one__content">
                                 <div class="blog-one__date">
-                                    <p>20 Feb, 2022</p>
+                                    <p>19. Mar 2025</p>
                                 </div>
                                 <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Admin </a>
-                                    </li>
-                                    <li><span>/</span></li>
-                                    <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="blog-3.html"><i class="far fa-user-circle"></i> av Follo Byggservice</a>
                                     </li>
                                 </ul>
-                                <h3 class="blog-one__title"><a href="blog-details.html">Bring to the table win-win
-                                        survival strategis</a></h3>
+                                <h3 class="blog-one__title"><a href="blog-3.html">Hvordan velge riktig entreprenør for ditt byggeprosjekt</a></h3>
                             </div>
                         </div>
                     </div>
@@ -1298,8 +933,12 @@
                     <div class="newsletter-shape-1"
                         style="background-image: url(assets/images/shapes/newsletter-shape-1.png);"></div>
                     <div class="newsletter__left">
-                        <h3 class="newsletter__title">Join Our Newsletter</h3>
-                        <p class="newsletter__text">Lorem ipsum dolor amet, elit do eiusmod sed</p>
+                        <h3 class="newsletter__title">Meld deg på nyhetsbrevet vårt</h3>
+                        <p class="newsletter__text">
+                            La oss bygge drømmer sammen.</p>
+                            <p class="newsletter__text">
+                                
+                                Følg med på reisen fra tanke til hjem—historier om familier som finner sitt sted i verden, fortalt rett til innboksen din.</p>
                     </div>
                     <div class="newsletter__right">
                         <form class="newsletter__form">
@@ -1323,9 +962,6 @@
                     <div class="row">
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
-                                <div class="footer-widget__logo">
-                                    <a href="index.html"><img src="assets/images/resources/footer-logo.png" alt=""></a>
-                                </div>
                                 <div class="footer-widget__about-text-box">
                                     <p class="footer-widget__about-text">Vi arbeider med lidenskap for å møte utfordringer og skape nye løsninger i byggebransjen.</p>
                                 </div>
