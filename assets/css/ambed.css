@@ -3043,7 +3043,7 @@ ul {
   overflow: hidden;
   margin-bottom: 30px;
   z-index: 1;
-  min-height: 510px;
+  min-height: 400px;
 }
 
 .feature-one__content:before {
