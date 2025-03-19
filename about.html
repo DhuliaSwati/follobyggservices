@@ -53,6 +53,87 @@
 
     <!-- toolbar css -->
     <link rel="stylesheet" href="assets/vendors/toolbar/css/toolbar.css">
+    <style>
+.testimonials-one__single {
+    position: relative;
+    margin: 0 15px; /* Add horizontal margin between cards */
+    overflow: hidden;
+    box-sizing: border-box;
+    width: calc(100% - 30px); /* Adjust width accounting for margins */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-one__single:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials-one .owl-carousel .owl-item {
+    padding: 15px 0; /* Add some vertical padding */
+    overflow: visible;
+}
+
+.testimonials-one .owl-carousel {
+    margin: 0 -15px; /* Offset the container to account for card margins */
+    overflow: hidden;
+    padding: 20px 0; /* Add padding to prevent shadow cutoff */
+}
+
+.testimonials-one__quote {
+    font-size: 36px;
+    color: #f5821f;
+    margin-bottom: 20px;
+}
+
+.testimonials-one__text-2 {
+    flex-grow: 1;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.testimonials-one__client-name {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.testimonials-one__client-name:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #f5821f;
+}
+
+/* Ensure proper spacing on mobile */
+@media (max-width: 767px) {
+    .testimonials-one__single {
+        margin: 0 10px;
+        width: calc(100% - 20px);
+        padding: 20px;
+    }
+    
+    .testimonials-one .owl-carousel {
+        margin: 0 -10px;
+    }
+    
+    .testimonials-one__text-2 {
+        font-size: 15px;
+    }
+}
+    </style>
 
 </head>
 
@@ -86,8 +167,8 @@
                     <div class="main-header__top-inner clearfix">
                         <div class="main-header__logo">
                             <a href="index.html">
-                                <img src="assets/images/resources/logo-1.png" alt="Follo Byggservice" class="dark-logo">
-                                <img src="assets/images/resources/logo-2.png" alt="Follo Byggservice" class="light-logo">
+                                <img src="assets/images/resources/logo-1.png" alt="" class="dark-logo">
+                                <img src="assets/images/resources/logo-2.png" alt="" class="light-logo">
                             </a>
                         </div>
                         <div class="main-header__top-right">
@@ -99,8 +180,8 @@
                                                 <span class="icon-phone-call"></span>
                                             </div>
                                             <div class="content">
-                                                <p>Ring oss</p>
-                                                <h5><a href="tel:+4766806060">+47 66 80 60 60</a></h5>
+                                                <p>Ring når som helst</p>
+                                                <h5><a href="tel:980009630">+ 98 (000) - 9630</a></h5>
                                             </div>
                                         </li>
                                         <li>
@@ -109,7 +190,7 @@
                                             </div>
                                             <div class="content">
                                                 <p>Send e-post</p>
-                                                <h5><a href="mailto:post@follobyggservice.no">post@follobyggservice.no</a></h5>
+                                                <h5><a href="mailto:ambed@company.com">ambed@company.com</a></h5>
                                             </div>
                                         </li>
                                         <li>
@@ -117,8 +198,8 @@
                                                 <span class="icon-location"></span>
                                             </div>
                                             <div class="content">
-                                                <p>Kringsjåveien 103</p>
-                                                <h5>1415 Oppegård</h5>
+                                                <p>380 St Kilda Road</p>
+                                                <h5>Melbourne, Australia</h5>
                                             </div>
                                         </li>
                                     </ul>
@@ -143,150 +224,21 @@
                                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                     <ul class="main-menu__list">
                                         <li class="dropdown megamenu">
-                                            <a href="index.html">Home </a>
-                                            <ul>
-                                                <li>
-                                                    <section class="home-showcase">
-                                                        <div class="container">
-                                                            <div class="home-showcase__inner">
-                                                                <div class="row">
-                                                                    <div class="col-lg-3">
-                                                                        <div class="home-showcase__item">
-                                                                            <div class="home-showcase__image">
-                                                                                <img src="assets/images/home-showcase/home-showcase-1-1.png"
-                                                                                    alt="">
-                                                                                <div class="home-showcase__buttons">
-                                                                                    <a href="index.html"
-                                                                                        class="thm-btn home-showcase__buttons__item">Multi
-                                                                                        Page</a>
-                                                                                    <a href="index-one-page.html"
-                                                                                        class="thm-btn home-showcase__buttons__item">One
-                                                                                        Page</a>
-                                                                                </div><!-- /.home-showcase__buttons -->
-                                                                            </div><!-- /.home-showcase__image -->
-                                                                            <h3 class="home-showcase__title">Homepage 01
-                                                                            </h3><!-- /.home-showcase__title -->
-                                                                        </div><!-- /.home-showcase__item -->
-                                                                    </div><!-- /.col-lg-3 -->
-                                                                    <div class="col-lg-3">
-                                                                        <div class="home-showcase__item">
-                                                                            <div class="home-showcase__image">
-                                                                                <img src="assets/images/home-showcase/home-showcase-1-2.png"
-                                                                                    alt="">
-                                                                                <div class="home-showcase__buttons">
-                                                                                    <a href="index2.html"
-                                                                                        class="thm-btn home-showcase__buttons__item">Multi
-                                                                                        Page</a>
-                                                                                    <a href="index2-one-page.html"
-                                                                                        class="thm-btn home-showcase__buttons__item">One
-                                                                                        Page</a>
-                                                                                </div><!-- /.home-showcase__buttons -->
-                                                                            </div><!-- /.home-showcase__image -->
-                                                                            <h3 class="home-showcase__title">Homepage 02
-                                                                            </h3><!-- /.home-showcase__title -->
-                                                                        </div><!-- /.home-showcase__item -->
-                                                                    </div><!-- /.col-lg-3 -->
-                                                                    <div class="col-lg-3">
-                                                                        <div class="home-showcase__item">
-                                                                            <div class="home-showcase__image">
-                                                                                <img src="assets/images/home-showcase/home-showcase-1-3.png"
-                                                                                    alt="">
-                                                                                <div class="home-showcase__buttons">
-                                                                                    <a href="index3.html"
-                                                                                        class="thm-btn home-showcase__buttons__item">Multi
-                                                                                        Page</a>
-                                                                                    <a href="index3-one-page.html"
-                                                                                        class="thm-btn home-showcase__buttons__item">One
-                                                                                        Page</a>
-                                                                                </div><!-- /.home-showcase__buttons -->
-                                                                            </div><!-- /.home-showcase__image -->
-                                                                            <h3 class="home-showcase__title">Homepage 03
-                                                                            </h3><!-- /.home-showcase__title -->
-                                                                        </div><!-- /.home-showcase__item -->
-                                                                    </div><!-- /.col-lg-3 -->
-                                                                    <div class="col-lg-3">
-                                                                        <div class="home-showcase__item">
-                                                                            <div class="home-showcase__image">
-                                                                                <img src="assets/images/home-showcase/home-showcase-1-4.png"
-                                                                                    alt="">
-                                                                                <div class="home-showcase__buttons">
-                                                                                    <a href="index-dark.html"
-                                                                                        class="thm-btn home-showcase__buttons__item">View
-                                                                                        Page</a>
-                                                                                </div><!-- /.home-showcase__buttons -->
-                                                                            </div><!-- /.home-showcase__image -->
-                                                                            <h3 class="home-showcase__title">Homepage
-                                                                                Dark
-                                                                            </h3><!-- /.home-showcase__title -->
-                                                                        </div><!-- /.home-showcase__item -->
-                                                                    </div><!-- /.col-lg-3 -->
-                                                                </div><!-- /.row -->
-                                                            </div><!-- /.home-showcase__inner -->
-
-                                                        </div><!-- /.container -->
-                                                    </section>
-                                                </li>
-                                            </ul>
+                                            <a href="index.html">Hjem</a>
                                         </li>
-                                        <li class="current">
-                                            <a href="about.html">About </a>
+                                        <li>
+                                            <a href="about.html">Om oss</a>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="#">Pages </a>
-                                            <ul>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="team-carousel.html">Team Carousel</a></li>
-                                                <li><a href="team-details.html">Team Details</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="testimonials-carousel.html">Testimonials Carousel</a></li>
-                                                <li><a href="gallery.html">Gallery</a></li>
-                                                <li><a href="gallery-carousel.html">Gallery Carousel</a></li>
-                                                <li><a href="faq.html">FAQs</a></li>
-                                                <li><a href="404.html">404 Error</a></li>
-                                            </ul>
+                                            <a href="projects.html">Prosjekter</a>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="projects.html">Projects</a>
-                                            <ul>
-                                                <li><a href="projects.html">Our Projects</a></li>
-                                                <li><a href="projects-carousel.html">Projects Carousel</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                            </ul>
+                                            <a href="services.html">Tjenester</a>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="services.html">Services </a>
-                                            <ul>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="services-carousel.html">Services Carousel</a></li>
-                                                <li><a href="room-wallpapers.html">Room Wallpapers</a></li>
-                                                <li><a href="wall-sheets.html">Wall Sheets</a></li>
-                                                <li><a href="wall-painting.html">Wall Painting</a></li>
-                                                <li><a href="interior-designing.html">Interior Designing</a></li>
-                                                <li><a href="pvc-panels.html">PVC Panels</a></li>
-                                                <li><a href="outdoor-design.html">Outdoor Design</a></li>
-                                            </ul>
+                                            <a href="blog.html">Blogg</a>
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="#">Shop</a>
-                                            <ul>
-                                                <li><a href="products.html">Products</a></li>
-                                                <li><a href="product-details.html">Product Details</a></li>
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="blog.html">Blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-carousel.html">Blog Carousel</a></li>
-                                                <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                                                <li><a href="blog-sidebar-two.html">Blog Sidebar 02</a></li>
-                                                <li><a href="blog-sidebar-left.html">Blog Sidebar Left</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact </a></li>
+                                        <li><a href="contact.html">Kontakt</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -296,7 +248,7 @@
                                         <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
                                     </div>
                                     <div class="main-menu__btn-box">
-                                        <a href="contact.html" class="thm-btn main-menu__btn">Book Appointment</a>
+                                        <a href="contact.html" class="thm-btn main-menu__btn">Bestill befaring</a>
                                     </div>
                                 </div>
                             </div>
@@ -391,86 +343,6 @@
         </section>
         <!--About Two End-->
 
-        <!--Brand One Start-->
-        <section class="brand-one brand-two">
-            <div class="container">
-                <div class="brand-one__inner">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <div class="brand-one__title">
-                                <h2>Samarbeidspartnere og Opplæringsbedrift</h2>
-                            </div>
-                        </div>
-                        <div class="col-xl-9">
-                            <div class="brand-one__main-content">
-                                <p style="margin-bottom: 30px;">Utover å bygge bygninger, er Follo Byggservice AS forpliktet til personlig utvikling og å bidra til en sunn bransje. Vi samarbeider med organisasjoner som NAV, Oslo Skolen Voksenopplæring og Marita Stiftelsen. Som en godkjent opplærings- og tiltaksbedrift, har vi som mål å øke antallet sertifiserte fagfolk i bransjen.</p>
-                                <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
-                           "0": {
-                               "spaceBetween": 30,
-                               "slidesPerView": 2
-                           },
-                           "375": {
-                               "spaceBetween": 30,
-                               "slidesPerView": 2
-                           },
-                           "575": {
-                               "spaceBetween": 30,
-                               "slidesPerView": 3
-                           },
-                           "767": {
-                               "spaceBetween": 50,
-                               "slidesPerView": 4
-                           },
-                           "991": {
-                               "spaceBetween": 50,
-                               "slidesPerView": 5
-                           },
-                           "1199": {
-                               "spaceBetween": 100,
-                               "slidesPerView": 5
-                           }
-                       }}'>
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-1.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-2.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-3.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-4.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-5.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-1.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-2.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-3.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-4.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img src="assets/images/brand/brand-1-5.png" alt="">
-                                        </div><!-- /.swiper-slide -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Brand One End-->
-
         <!--Testimonial Two Start-->
         <section class="testimonial-two">
             <div class="testimonial-two-bg"
@@ -483,65 +355,65 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="testimonial-two__inner">
-                            <div class="owl-carousel owl-theme thm-owl__carousel testimonial-one__carousel">
+                        <div class="testimonials-one">
+                            <div class="owl-carousel owl-theme thm-owl__carousel testimonials-carousel">
                                 <!--Value One Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
+                                <div class="testimonials-one__single">
+                                    <div class="testimonials-one__quote">
                                         <span class="icon-quotation"></span>
                                     </div>
-                                    <p class="testimonial-one__text-2">Vi streber etter å levere førsteklasses håndverk med materialer som sikrer varige resultater.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Kvalitet</h4>
+                                    <p class="testimonials-one__text-2">Vi streber etter å levere førsteklasses håndverk med materialer som sikrer varige resultater.</p>
+                                    <div class="testimonials-one__client-info">
+                                        <div class="testimonials-one__client-content">
+                                            <h4 class="testimonials-one__client-name">Kvalitet</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <!--Value Two Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
+                                <div class="testimonials-one__single">
+                                    <div class="testimonials-one__quote">
                                         <span class="icon-quotation"></span>
                                     </div>
-                                    <p class="testimonial-one__text-2">Vi er dedikert til å oppfylle kundenes behov og sikre deres fullstendige tilfredshet gjennom hele prosjektet.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Engasjement</h4>
+                                    <p class="testimonials-one__text-2">Vi er dedikert til å oppfylle kundenes behov og sikre deres fullstendige tilfredshet gjennom hele prosjektet.</p>
+                                    <div class="testimonials-one__client-info">
+                                        <div class="testimonials-one__client-content">
+                                            <h4 class="testimonials-one__client-name">Engasjement</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <!--Value Three Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
+                                <div class="testimonials-one__single">
+                                    <div class="testimonials-one__quote">
                                         <span class="icon-quotation"></span>
                                     </div>
-                                    <p class="testimonial-one__text-2">Vi tror på samarbeid og effektiv kommunikasjon for å oppnå de beste resultatene og møte kundens forventninger.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Samarbeid</h4>
+                                    <p class="testimonials-one__text-2">Vi tror på samarbeid og effektiv kommunikasjon for å oppnå de beste resultatene og møte kundens forventninger.</p>
+                                    <div class="testimonials-one__client-info">
+                                        <div class="testimonials-one__client-content">
+                                            <h4 class="testimonials-one__client-name">Samarbeid</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <!--Value Four Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
+                                <div class="testimonials-one__single">
+                                    <div class="testimonials-one__quote">
                                         <span class="icon-quotation"></span>
                                     </div>
-                                    <p class="testimonial-one__text-2">Vi søker kontinuerlig nye og forbedrede metoder, er åpne for innovasjon, og bruker moderne teknikker og løsninger.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Innovasjon</h4>
+                                    <p class="testimonials-one__text-2">Vi søker kontinuerlig nye og forbedrede metoder, er åpne for innovasjon, og bruker moderne teknikker og løsninger.</p>
+                                    <div class="testimonials-one__client-info">
+                                        <div class="testimonials-one__client-content">
+                                            <h4 class="testimonials-one__client-name">Innovasjon</h4>
                                         </div>
                                     </div>
                                 </div>
                                 <!--Value Five Single-->
-                                <div class="testimonial-one__single">
-                                    <div class="testimonial-one__quote">
+                                <div class="testimonials-one__single">
+                                    <div class="testimonials-one__quote">
                                         <span class="icon-quotation"></span>
                                     </div>
-                                    <p class="testimonial-one__text-2">Vi tar ansvar for prosjektene og sikrer at de gjennomføres profesjonelt og effektivt fra start til mål.</p>
-                                    <div class="testimonial-one__client-info">
-                                        <div class="testimonial-one__client-content">
-                                            <h4 class="testimonial-one__client-name">Lederskap</h4>
+                                    <p class="testimonials-one__text-2">Vi tar ansvar for prosjektene og sikrer at de gjennomføres profesjonelt og effektivt fra start til mål.</p>
+                                    <div class="testimonials-one__client-info">
+                                        <div class="testimonials-one__client-content">
+                                            <h4 class="testimonials-one__client-name">Lederskap</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -563,14 +435,6 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-6">
                         <div class="leading__left">
-                            <div class="leading__video-link">
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                    <div class="leading__video-icon">
-                                        <span class="fa fa-play"></span>
-                                        <i class="ripple"></i>
-                                    </div>
-                                </a>
-                            </div>
                             <h3 class="leading__title">Ledende innen <br> byggebransjen</h3>
                         </div>
                     </div>
@@ -639,85 +503,291 @@
                     </div>
                 </div>
                 <div class="team-one__bottom">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                            <!--Team One single-->
-                            <div class="team-one__single">
-                                <div class="team-one__img-box">
-                                    <div class="team-one__img">
-                                        <img src="assets/images/team/team-1-1.jpg" alt="Stefan Norberg">
-                                        <div class="team-one__social">
-                                            <!-- Social links if needed -->
-                                        </div>
+                    <div class="owl-carousel owl-theme thm-owl__carousel team-carousel">
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-1.jpg" alt="Stefan Norberg">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
                                     </div>
-                                </div>
-                                <div class="team-one__content">
-                                    <div class="team-one__title-box">
-                                        <div class="team-one__title-shape">
-                                            <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
-                                            <div class="team-one__title-text">
-                                                <p class="team-one__title">Daglig Leder, Byggmester</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="team-one__name">Stefan Norberg</h3>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                            <!--Team One single-->
-                            <div class="team-one__single">
-                                <div class="team-one__img-box">
-                                    <div class="team-one__img">
-                                        <img src="assets/images/team/team-1-2.jpg" alt="Joachim Norenberg">
-                                        <div class="team-one__social">
-                                            <!-- Social links if needed -->
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Daglig Leder, Byggmester</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="team-one__content">
-                                    <div class="team-one__title-box">
-                                        <div class="team-one__title-shape">
-                                            <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
-                                            <div class="team-one__title-text">
-                                                <p class="team-one__title">Prosjektleder</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="team-one__name">Joachim Norenberg</h3>
-                                </div>
+                                <h3 class="team-one__name">Stefan Norberg</h3>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                            <!--Team One single-->
-                            <div class="team-one__single">
-                                <div class="team-one__img-box">
-                                    <div class="team-one__img">
-                                        <img src="assets/images/team/team-1-3.jpg" alt="Bjørn Erik Gamborg">
-                                        <div class="team-one__social">
-                                            <!-- Social links if needed -->
-                                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-2.jpg" alt="Joachim Norenberg">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
                                     </div>
-                                </div>
-                                <div class="team-one__content">
-                                    <div class="team-one__title-box">
-                                        <div class="team-one__title-shape">
-                                            <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
-                                            <div class="team-one__title-text">
-                                                <p class="team-one__title">Byggmester</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="team-one__name">Bjørn Erik Gamborg</h3>
                                 </div>
                             </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Prosjektleder</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Joachim Norenberg</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row" style="margin-top: 30px;">
-                        <div class="col-12">
-                            <div class="team-list" style="text-align: center;">
-                                <h4 style="margin-bottom: 20px;">Resten av vårt dyktige team:</h4>
-                                <p>Jakub Piechowski (Tømrerformann), Kenneth Grinde (Tømrerformann), Rafal Gregorczuk (Tømrer), James Paulsen (Montør), Imad Abuozraa (Montør), Emil Andre Dahl (Montør), Abdalla Mohammed (Montør), Lasse Andressen (Voksen lærling), Daniel Ryen (Voksen lærling), Mohamed Sarr (Voksen lærling), Kenneth Waaler (Lærling)</p>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-3.jpg" alt="Bjørn Erik Gamborg">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Byggmester</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Bjørn Erik Gamborg</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-4.jpg" alt="Jakub Piechowski">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Tømrerformann</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Jakub Piechowski</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-5.jpg" alt="Kenneth Grinde">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Tømrerformann</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Kenneth Grinde</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-6.jpg" alt="Rafal Gregorczuk">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Tømrer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Rafal Gregorczuk</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-7.jpg" alt="James Paulsen">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Montør</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">James Paulsen</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-8.jpg" alt="Imad Abuozraa">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Montør</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Imad Abuozraa</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-9.jpg" alt="Emil Andre Dahl">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Montør</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Emil Andre Dahl</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-10.jpg" alt="Abdalla Mohammed">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Montør</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Abdalla Mohammed</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-11.jpg" alt="Lasse Andressen">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Voksen Lærling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Lasse Andressen</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-13.jpg" alt="Mohamed Sarr">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Voksen Lærling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Mohamed Sarr</h3>
+                            </div>
+                        </div>
+                        <!--Team One single-->
+                        <div class="team-one__single">
+                            <div class="team-one__img-box">
+                                <div class="team-one__img">
+                                    <img src="assets/images/team/team-1-14.jpg" alt="Kenneth Waaler">
+                                    <div class="team-one__social">
+                                        <!-- Social links if needed -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-one__content">
+                                <div class="team-one__title-box">
+                                    <div class="team-one__title-shape">
+                                        <img src="assets/images/shapes/team-one-title-box-shape.png" alt="">
+                                        <div class="team-one__title-text">
+                                            <p class="team-one__title">Lærling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="team-one__name">Kenneth Waaler</h3>
                             </div>
                         </div>
                     </div>
@@ -949,6 +1019,59 @@
     <script src="assets/vendors/toolbar/js/js.cookie.min.js"></script>
     <script src="assets/vendors/toolbar/js/jQuery.style.switcher.min.js"></script>
     <script src="assets/vendors/toolbar/js/toolbar.js"></script>
+
+    <!-- Add this script to initialize the team carousel -->
+    <script>
+    $(document).ready(function() {
+        if ($('.team-carousel').length) {
+            $('.team-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: false,
+                smartSpeed: 500,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
+            });
+        }
+    });
+
+    if ($('.testimonials-carousel').length) {
+        $('.testimonials-carousel').owlCarousel({
+            loop: true,
+            margin: 30, /* Increase margin between items */
+            nav: false,
+            dots: true,
+            smartSpeed: 700,
+            autoplay: true,
+            autoplayTimeout: 7000,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 20 /* Smaller margin on mobile */
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 2
+                },
+                1200: {
+                    items: 3
+                }
+            }
+        });
+    } 
+    </script>
 
 </body>
 
